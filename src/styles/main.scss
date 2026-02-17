@@ -1,3 +1,4 @@
+@use 'variaveis';
 @use 'hero';
 
 * {
@@ -6,28 +7,23 @@
   box-sizing: border-box;
 }
 
-$corDeFundo: #040714;
-$corTextoPrincipal: silver;
-$corTextoSecundario: #f9f9f9;
-
 body {
-  background-color: $corDeFundo;
+  background-color: variaveis.$corDeFundo;
 }
 
 @mixin text($fontSize: 16px) {
   font-size: $fontSize;
   line-height: $fontSize + 10px;
-  color: $corTextoPrincipal;
+  color: variaveis.$corTextoPrincipal;
 }
 
 @mixin title($fontSize: 40px) {
   @include text($fontSize);
-  color: $corTextoSecundario;
+  color: variaveis.$corTextoSecundario;
 }
 
 .text--big {
   @include text(18px);
-  // color: $corTextoPrincipal;
 }
 
 .text {
@@ -36,16 +32,33 @@ body {
 
 .text--small {
   @include text(12px);
-  // color: $corTextoSecundario;
 }
 
 .link-text {
   @include text(18px);
-  color: $corTextoSecundario;
+  color: variaveis.$corTextoSecundario;
   text-decoration: underline;
   cursor: pointer;
 }
 
 .title--big {
   @include title(44px);
+
+  @media (max-width: 768px) {
+    @include title(26px);
+  }
+}
+.title {
+  @include title;
+
+  @media (max-width: 768px) {
+    @include title(24px);
+  }
+}
+.title--small {
+  @include title(28px);
+
+  @media (max-width: 768px) {
+    @include title(22px);
+  }
 }
