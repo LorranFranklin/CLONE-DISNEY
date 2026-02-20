@@ -1,39 +1,59 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="pt-BR">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Clone Disney+</title>
+    <title>Clone Disney Plus</title>
     <link rel="stylesheet" href="dist/css/main.css" />
   </head>
   <body>
+    <header class="header header--is-hidden">
+      <div class="header__container">
+        <h1>
+          <img
+            class="header__logo"
+            src="./src/images/disneyplus.svg"
+            alt="Logo disney Plus"
+          />
+        </h1>
+        <ul class="header__links">
+          <li class="header__links__item">
+            <a href="#" class="button button--secondary">Assine agora</a>
+          </li>
+          <li class="header__links__item">
+            <a href="#" class="button button--dark">Entrar</a>
+          </li>
+        </ul>
+      </div>
+    </header>
+
     <section class="hero">
       <div class="hero__content">
-        <h1 class="hero__content__branding">
-          <img src="dist/images/disneyplus.svg" alt="Logo disney Plus" />
-        </h1>
+        <div class="hero__content__branding">
+          <img src="./src/images/disneyplus.svg" alt="Logo disney Plus" />
+        </div>
         <h3 class="title--small">As melhores histórias em um só lugar.</h3>
         <p>
           <a href="#" class="link-text">Assinar o Disney+</a>
           <br />
-          <span class="text">R$ 27,90/mês ou R$ 279,90/ano à vista*</span>
+          <span class="text"> R$ 27,90/mês ou R$ 279,90/ano à vista* </span>
         </p>
         <ul class="hero__content__combos">
           <li class="hero__content__combos__combo">
             <img
-              src="./dist/images/logos/disney_star_plus.png"
-              alt="Disney+ - Star+ - Combo"
+              src="./dist//images/logos/disney_star_plus.png"
+              alt="Disney + - Star+ - Combo+"
             />
-            <button class="button">ASSINE AGORA</button>
-            <span class="text">45,90/mês*</span>
+            <button class="button">Assine Agora</button>
+            <span class="text">R$ 45,90/mês</span>
           </li>
           <li class="hero__content__combos__combo">
             <img
-              src="./dist/images/logos/disney_star_plus_starzplay.png"
-              alt=""
+              src="./dist//images/logos/disney_star_plus_starzplay.png"
+              alt="Disney + - Star+ - Combo+"
             />
-            <button class="button">ASSINE AGORA</button>
-            <span class="text">55,90/mês*</span>
+            <button class="button">Assine Agora</button>
+            <span class="text">R$ 45,90/mês</span>
           </li>
         </ul>
         <p class="text--small">
@@ -45,20 +65,19 @@
     <section class="shows">
       <nav class="shows__tabs">
         <button
-          data-tab-button="em_breve"
+          data-tab-button="em-breve"
           class="shows__tabs__button shows__tabs__button--is-active"
         >
           Em breve
         </button>
         <button data-tab-button="populares" class="shows__tabs__button">
-          Mais Populares
+          Mais populares
         </button>
         <button data-tab-button="stars_plus" class="shows__tabs__button">
           Mais no Stars+
         </button>
       </nav>
-      <!-- em breve -->
-      <ul data-tab-id="em_breve" class="shows__list shows__list--is-active">
+      <ul data-tab-id="em-breve" class="shows__list shows__list--is-active">
         <li class="shows__list__item">
           <img
             src="./dist/images/em_breve/desencantada.jpg"
@@ -66,13 +85,13 @@
           />
         </li>
         <li class="shows__list__item">
+          <img src="./dist/images/em_breve/willow.jpg" alt="willow" />
+        </li>
+        <li class="shows__list__item">
           <img src="./dist/images/em_breve/lobisomem.jpg" alt="lobisomem" />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/sem_limites.jpg" alt="sem limites" />
-        </li>
-        <li class="shows__list__item">
-          <img src="./dist/images/em_breve/spidey.jpg" alt="spidey" />
+          <img src="./dist/images/em_breve/spidey.jpg" alt="Spidey" />
         </li>
         <li class="shows__list__item">
           <img
@@ -81,10 +100,10 @@
           />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/em_breve/willow.jpg" alt="willow" />
+          <img src="./dist/images/em_breve/sem_limites.jpg" alt="sem limites" />
         </li>
       </ul>
-      <!-- mais populares -->
+
       <ul data-tab-id="populares" class="shows__list">
         <li class="shows__list__item">
           <img src="./dist/images/mais_populares/bluey.jpg" alt="bluey" />
@@ -98,7 +117,7 @@
         <li class="shows__list__item">
           <img
             src="./dist/images/mais_populares/o_incrivel_dr_pol.jpg"
-            alt="o incrível dr. pol"
+            alt="o_incrivel dr pol"
           />
         </li>
         <li class="shows__list__item">
@@ -114,35 +133,35 @@
           />
         </li>
       </ul>
-      <!-- mais no stars+ -->
+
       <ul data-tab-id="stars_plus" class="shows__list">
         <li class="shows__list__item">
-          <img src="./dist/images/mais_no_star_plus/belair.jpg" alt="belair" />
+          <img src="./dist/images/mais_no_stars_plus/belair.jpg" alt="belair" />
         </li>
         <li class="shows__list__item">
           <img
-            src="./dist/images/mais_no_star_plus/libertadores.jpg"
+            src="./dist/images/mais_no_stars_plus/libertadores.jpg"
             alt="libertadores"
           />
         </li>
         <li class="shows__list__item">
-          <img src="./dist/images/mais_no_star_plus/nba.jpg" alt="nba" />
+          <img src="./dist/images/mais_no_stars_plus/nba.jpg" alt="nba" />
         </li>
         <li class="shows__list__item">
           <img
-            src="./dist/images/mais_no_star_plus/os_simpson.jpg"
+            src="./dist/images/mais_no_stars_plus/os_simpson.jpg"
             alt="os simpson"
           />
         </li>
         <li class="shows__list__item">
           <img
-            src="./dist/images/mais_no_star_plus/premier_league.jpg"
-            alt="the santa clauses"
+            src="./dist/images/mais_no_stars_plus/premier_league.jpg"
+            alt="premier league"
           />
         </li>
         <li class="shows__list__item">
           <img
-            src="./dist/images/mais_no_star_plus/the_kardashians.jpg"
+            src="./dist/images/mais_no_stars_plus/the_kardashians.jpg"
             alt="the kardashians"
           />
         </li>
@@ -152,11 +171,8 @@
       <h2 class="title--big">Escolha seu plano</h2>
       <ul class="plans__list">
         <li class="plans__list__item">
-          <img
-            src="./dist/images/logos/disneyplus_underline.png"
-            alt="Disney+"
-          />
-          <strong class="title--small">27,90/mês*</strong>
+          <img src="dist/images/logos/disneyplus_underline.png" alt="" />
+          <strong class="title--small">R$ 27,90/mês*</strong>
           <p class="text--big">
             No Disney+ você encontra as ultimas estreias do cinema, originais e
             clássicos inesquecíveis.
@@ -193,7 +209,7 @@
     <section class="image-text-section">
       <img
         src="./dist/images/tv_pc_tablet_celular.png"
-        alt="Imgem com TV, Computador, Tablet e Celular"
+        alt="Imagem com TV, Computador, Tablet e Celular"
       />
       <div class="image-text-section__text_container">
         <h2 class="title">Assista do seu jeito</h2>
@@ -209,10 +225,7 @@
     <!-- section com rei leão de background img e texto centralizado com position absolute  -->
     <section class="image-text-section image-text-section--image-full-width">
       <picture>
-        <source
-          media="(max-width:768px)"
-          srcset="./dist/images/fundo_rei_leao_celular.png"
-        />
+        <source media="(max-width:768px)" srcset="./dist/images/fundo_rei_leao_celular.png" />
         <img src="./dist/images/fundo_rei_leao.png" alt="Rei leão" />
       </picture>
       <div
@@ -226,7 +239,6 @@
       </div>
     </section>
 
-    <!-- section de dispositivos -->
     <section class="available-devices">
       <h2 class="title">Disponível nos seus dispositivos favoritos</h2>
       <ul class="available-devices__list">
@@ -284,7 +296,6 @@
       </ul>
     </section>
 
-    <!-- faq  -->
     <section class="faq">
       <h2 class="title">Perguntas frequentes</h2>
       <ul class="faq__questions">
@@ -387,7 +398,8 @@
         </li>
       </ul>
     </section>
-     <footer class="footer">
+
+    <footer class="footer">
       <div class="footer__container">
         <img
           class="footer__logo"
@@ -428,7 +440,7 @@
           </li>
         </ul>
         <p class="text--small">
-          &copy; 2026 Disney, Disney+ e The Walt Disney Company. Todos os
+          &copy; 2022 Disney, Disney+ e The Walt Disney Company. Todos os
           direitos reservados. Serviço de assinatura paga. Conteúdo sujeito a
           disponibilidade.
         </p>

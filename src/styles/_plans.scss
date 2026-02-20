@@ -10,12 +10,28 @@
     justify-content: space-around;
     margin-top: 50px;
 
+    @media (max-width: 768px) {
+      display: block;
+      max-width: 100vw;
+      box-sizing: border-box;
+
+      .plans__list__item {
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    .button {
+      margin-top: 24px;
+    }
+
     &__item {
       text-align: center;
       padding: 60px 44px 44px;
       max-width: 380px;
       width: 100%;
 
+      // escolhendo o segundo item
       &:nth-child(2) {
         background-image: url(../images/fundo_combo_plus.png);
         background-repeat: no-repeat;
@@ -23,16 +39,16 @@
       }
 
       img {
-        // width: 100%;
         height: 83px;
       }
-    }
 
-    strong {
-      display: block;
-      margin-top: 24px;
+      strong {
+        display: block;
+        margin-top: 24px;
+      }
     }
   }
+
   P {
     text-align: center;
   }
